@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding-block: 0.25rem;
+  border: 0.1px solid lightgray;
+  width: 100%;
+
+  &__left {
+    display: flex;
+    align-items: center;
+
+    & > img {
+      object-fit: contain;
+      height: 30px;
+      margin: 0.5rem;
+    }
+  }
+
+  &__right {
+    display: flex;
+  }
+
+  &__search {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 34px;
+    color: gray;
+    background: #eef3f8;
+
+    & > svg {
+      position: absolute;
+      margin-left: 0.5rem;
+    }
+
+    & > input {
+      width: 250px;
+      height: 100%;
+      padding-left: 2rem;
+      border: none;
+      background: none;
+    }
+  }
+
+}
